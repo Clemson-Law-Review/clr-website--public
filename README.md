@@ -31,7 +31,7 @@ Everything the site does, by area.
 - Each summary shows its court, docket, decision date, authors and editors, its permanent Online citation ([volume] Cʟᴇᴍ. L. Rᴇᴠ. Oɴʟɪɴᴇ [page] ([year])) and any parallel citations ("Also reported as").
 - **Linked citations:** every full case citation in the text and footnotes links quietly to the opinion in a free public case-law database, with a card showing court, date and parallel citations. Citations such as *Marbury v. Madison*, 5 U.S. (1 Cranch) 137 (1803), link, and so do short forms (*Id.*, "Marbury, 5 U.S. at 177").
 - **Judge cards:** "Chief Justice Marshall", "Justice Paterson", "Justice Chase" and similar link to the judge's profile, with a hover card (portrait, seat, appointment, career, education) on computers and a short card on phones.
-- **Laws:** citations to statutes, regulations and the Constitution link to the official text, with a card on hover or tap showing the section heading and where it sits in the code. Covers the U.S. Code, the C.F.R., the Federal Register, public laws, the Statutes at Large, the U.S. Constitution, the South Carolina Code, Florida Statutes and other states' codes. A **Laws cited** page lists every law the site cites, with the pieces that cite each one.
+- **Laws:** citations to statutes, regulations and the Constitution link to the official text, with a card on hover or tap showing the section heading, where it sits in the code, and the law's own words for the part cited. Covers the U.S. Code, the C.F.R., the Federal Register, public laws, the Statutes at Large, the U.S. Constitution, the South Carolina Code, Florida Statutes and other states' codes. A **Laws cited** page lists every law the site cites, with the pieces that cite each one.
 
 **The journal (Clemson Law Review)**
 - **Volumes & Issues** register: volume tabs, a title and author filter, and every issue with its pieces and citations. Lists the Online volumes too, with how to cite.
@@ -42,6 +42,7 @@ Everything the site does, by area.
 - Bluebook **citation box** with a copy button; Cʟᴇᴍ. L. Rᴇᴠ. set in large and small caps.
 - **Download PDF** of the piece, and **Download issue PDF** when the issue has one.
 - **Footnote previews:** hover to preview, click to pin.
+- **Passages from the cited page:** when a footnote cites a page of an opinion ("*Marbury*, 5 U.S. at 177"), the footnote can open to that page with the sentences that support the note highlighted, one row per pincite, plus the whole page and a link to it in the case-law database. Highlights are picked automatically by AI and marked as such; the text shown is always the court's own. Separate opinions are kept apart, so a cite to a concurrence or dissent shows that opinion's page. Web pages only: PDFs are unchanged.
 - Copyright line (authors keep copyright; interviews are © Clemson Law Review) and the Review's disclaimer.
 - **Report an error:** a link beside Download PDF, a box after the citation, and a button over selected text.
 - Optional extra button beside Download PDF (for example a link to the author's own site).
@@ -102,6 +103,13 @@ Everything the site does, by area.
 - Editors can correct or turn off any judge card, and look up judges on every published summary at once.
 - Stays within the database's request limits, pausing and resuming on its own.
 
+**AI passages** (optional, off by default)
+- An AI model picks which sentences of a cited page support each footnote. It answers with sentence numbers only, which are checked against the page.
+- Only scheduled or published pieces are sent, one footnote at a time; drafts never are.
+- One switch turns AI off entirely: nothing is sent, and passages already picked stay.
+- A **Passages** panel in the editor flags passages to check, and editors can choose different sentences or hide a passage. An editor's choice is never replaced.
+- Running out of credits or reaching a monthly spending limit stops it cleanly, with a note in Settings, and it picks up where it left off.
+
 **Laws**
 - Citations to statutes, regulations and the Constitution are recognized, checked against official sources and flagged when a section does not exist or has been repealed or moved.
 - Short forms ("§ 1", "Id. § 1") point to the last code cited, as in 4 U.S.C. § 1 (Flag; stripes and stars on).
@@ -159,7 +167,7 @@ Releases are published with GitHub Releases and installed from the WordPress das
 
 ## Credits
 
-The site relies on free and open resources, and we are grateful for them: free public case-law and legal-data services, official government sources for federal and state law, public court calendars, and the open-source libraries that power PDFs and the Word-style editor.
+The site relies on free and open resources, and we are grateful for them: free public case-law and legal-data services, official government sources for federal and state law, public court calendars, and the open-source libraries that power PDFs and the Word-style editor. The optional footnote passages use a paid AI service.
 
 ## Terms of use
 
